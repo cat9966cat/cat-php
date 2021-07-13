@@ -114,7 +114,20 @@ std;
 
 
     //第二题 获取当前访问者的计算机信息，如IP、端口号等
-    echo "当前电脑的操作系统是:";
+    //预定义变量
+
+    echo "当前代码的行数是:".__LINE__."\n";
+    echo "当前文件名称是:".__FILE__."\n";
+    echo "当前运行脚本的服务器ip地址是:";
+    var_dump($_SERVER['SERVER_ADDR']);
+    echo "当前运行脚本的服务器名称是:";
+    var_dump($_SERVER['SERVER_NAME']);
+
+    //第三题 PHP的输出语句有echo、print、printf、print_r。尝试使用这4个语句输出数据，看它们之间有什么不同。
+    echo  "hello cat\n";
+    print "hello cat\n";
+    print_r("hello cat\n");
+    printf("%d %s",189,"hello cat\n");
 
 
 
